@@ -24,7 +24,10 @@ const weatherSchema = new mongoose.Schema({
   temperature: Number,
   humidity: Number,
   description: String,
+  sunrise: String,
+  sunset:String,
   createdAt: { type: Date, default: Date.now }
+  
 });
 
 const Weather = mongoose.model('Weather', weatherSchema);
